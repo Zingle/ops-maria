@@ -1,0 +1,6 @@
+[Unit]
+Wants=maria@ops\x2dmaria.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/bash -c "echo provision ops-maria DB schema"
